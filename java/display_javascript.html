@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--bai tap 1-->
+   <button type="button" onclick="showMessage()">Click Me!</button> 
+   <script>
+    function showMessage() {
+        alert('xin chao!');
+    }
+   </script>
+   <br><br>
+   <!--bai tap2-->
+   <div id="messageDiv"></div>
+   <button type="button" onclick="showMessage2();">Click me!</button>
+   <script>
+    function showMessage2(){
+        document.getElementById('messageDiv').innerHTML='xin chao!';
+    }
+   </script>
+   <br><br>
+   <!--bai tap 3-->
+   <button type="button" onclick="showMessage3()">Click me!</button>
+   <script>
+    function showMessage3(){
+        document.write('Xin chao');
+    }
+   </script>
+   <br><br>
+   <!--bai tap 4-->
+   <button type="button" onclick="showMessage4();">Click me</button>
+   <script>
+    function showMessage4(){
+        console.log('Xin chao');
+    }
+   </script>
+</body>
+</html>
