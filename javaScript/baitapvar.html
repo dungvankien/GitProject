@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bài 1 tính diem trung bình-->
+    <script>
+        var vl=prompt('Nhập điểm môn Vật lý');
+        var hh=prompt('Nhập điểm môn Hóa học');
+        var sh=prompt('Nhập điểm môn sinh học');
+        vatly=parseFloat(vl);
+        hoahoc=parseFloat(hh);
+        sinhhoc=parseFloat(sh);
+        t=vatly+hoahoc+sinhhoc;
+        tb=t/3;
+        document.write('Điểm trung bình  ',tb);
+        document.write('<br>');
+        document.write('Tổng điểm 3 môn  ',t);
+    </script>
+    <!--  bài 2 đổi độ C sang độ F -->
+   <script>
+       var nd=prompt('Nhập độ C');
+       c=parseFloat(nd);
+       f=(9*c/5)+32;
+       document.write('<br>');
+       document.write(c,'C = ',f,' F');
+   </script>
+   <!-- bài 3  vs bài 4 tính dien tích hình tron-->
+   <script>
+    var bankinh=prompt('Nhập bán kính hình tròn');
+    R=parseFloat(bankinh);
+    S=R*R*Math.PI;
+    CV=2*R*Math.PI;
+    document.write('<br>');
+    document.write('Diện tích hình tròn  ', S);
+    document.write('<br>');
+    document.write('Chu vi hình tròn  ', CV);
+   </script>
+</body>
+</html>
