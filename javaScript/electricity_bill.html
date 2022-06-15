@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>electricity_bill</title>
+    <link rel="stylesheet" href="electricity_bill.css">
+</head>
+<body>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Electricity Bill</th>
+                </tr>
+                <tr>
+                    <td>Electric number</td>
+                    <td><input type="number" id="number"></td>
+                </tr>
+                <tr>
+                    <td>Number leve1</td>
+                    <td><input type="number" id="number1"readonly></td>
+                    <td> Payment level 1</td>
+                    <td><input type="number"id="level1" readonly></td>
+                </tr>
+                <tr>
+                    <td>Number leve 2</td>
+                    <td><input type="number" id="number2"readonly></td>
+                    <td> Payment level 2</td>
+                    <td><input type="number"id="level2" readonly></td>
+                </tr>
+                <tr>
+                    <td>Number leve 3</td>
+                    <td><input type="number" id="number3"readonly></td>
+                    <td> Payment level 3</td>
+                    <td><input type="number"id="level3" readonly></td>
+                </tr>
+                <tr>
+                    <td>Number leve 4</td>
+                    <td><input type="number" id="number4"readonly></td>
+                    <td> Payment level 4</td>
+                    <td><input type="number"id="level4" readonly></td>
+                </tr>
+                <tr>
+                    <td>Number leve 5</td>
+                    <td><input type="number" id="number5"readonly></td>
+                    <td> Payment level 5</td>
+                    <td><input type="number"id="level5" readonly></td>
+                </tr>
+                <tr>
+                    <td>Number leve 6</td>
+                    <td><input type="number" id="number6"readonly></td>
+                    <td> Payment level 6</td>
+                    <td><input type="number"id="level6" readonly></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td> Pre-tax payment</td>
+                    <td><input type="number"id="payment" readonly></td>
+                </tr>
+                <tr>
+                    <td> Pay after tax</td>
+                    <td><input type="number"id="paymenttax" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="payment()">Payment</button>
+                        <button onclick="reset()">Reset</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="electricity_bill.js"></script>
+</body>
+</html>
