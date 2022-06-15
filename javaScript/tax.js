@@ -13,9 +13,11 @@ var tax;
 //                 tax=salary*0.15;}
 //                 else if (salary >5000000) {
 //                     tax=salary*0.1;}
-//                     else {
+//                     else if (salary>0 {
 //                         tax=salary*0.05;}
-// console.log('Pay tax: ' + tax)
+//                             else {
+//                                 tax='undefined';}
+// console.log('Pay tax: ' + tax);
 
 // swith--case
 // switch (true) {
