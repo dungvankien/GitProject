@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Total number</h2>
+    <p id="total" ></p>
+    <script>
+        let total=0;
+        let num= Number(prompt('Enter your number: '));
+        for(let i=1;i<=num;i++){
+            total+=i;
+        }
+        document.getElementById('total').innerHTML=('Total for 1 to '+num+' = '+total);
+    </script>
+</body>
+</html>
