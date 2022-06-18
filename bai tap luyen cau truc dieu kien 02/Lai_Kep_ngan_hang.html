@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lai Kep</title>
+    <link rel="stylesheet" href="Lai_kep_ngan_hang.css">
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th>Lãi kép ngân hàng</th>
+            </tr>
+            <tr>
+                <td>Nhập số tiền cần vay</td> 
+                <td ><input class="dinhdang" type="number"  id="money"></td>
+            </tr>
+            <tr>
+                <td>Lãi xuất 1 năm (%)</td>
+                <td><input class="dinhdang" type="number"id="laiSuat"></td>
+            </tr>
+            <tr>
+                <td>Số tháng cần vay</td>
+                <td ><input class="dinhdang" type="number" id="soThang"></td>
+            </tr>
+            <tr>
+                <td>Số tiền lãi kép cần trả</td>
+                <td ><input class="dinhdang"type="number"  id="laiKep" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="check()">Check</button><button onclick="reset()">Reset</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="Lai_kep_ngan_hang.js"></script>
+</body>
+</html>
