@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Find the largest number</h2>
+    <p><span>Enter number 1</span>
+        <span><input type="number" id="number1" style="text-align:right ;"></span>
+    </p>
+    <p><span>Enter number 2</span>
+        <span><input type="number" id="number2"style="text-align:right ;"></span>
+    </p>
+    <p><span>Enter number 3</span>
+        <span><input type="number" id="number3"style="text-align:right ;"></span>
+    </p>
+    <p><span>Max number: </span>
+        <span id="maxnumber"></span>
+    </p>
+    <p><button onclick="myCheck()">Check</button></p>
+    <script>
+        function myCheck(){
+            let number1=Number(document.getElementById('number1').value);
+            let number2=Number(document.getElementById('number2').value);
+            let number3=Number(document.getElementById('number3').value);
+            if ((number1>number2) && (number1>number3)){
+                document.getElementById('maxnumber').innerHTML=number1;
+            }
+                else if (number2>number3){
+                document.getElementById('maxnumber').innerHTML=number2;
+            }
+                    else {
+                    document.getElementById('maxnumber').innerHTML=number3;
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+function mycheck(){
+    let hangthang=Number(document.getElementById('thuebao').value);
+    let dgthuebao=22000;
+    let cnoihat=Number(document.getElementById('noihat').value);
+    let dgnoihat=220;
+    let cnoihatlt=Number(document.getElementById('noihatlt').value);
+    let dgnoihatlt=790;
+    let cngoaihatlt=Number(document.getElementById('nmlt').value);
+    let dgngoaihatlt=1000;
+    let cddnoihat=Number(document.getElementById('didongnh').value);
+    let dgddnoihat=790;
+    let cddngoaihat=Number(document.getElementById('didongnm').value);
+    let dgddngoaihat=1090;
+    document.getElementById('dongiatb').value=dgthuebao;
+    document.getElementById('tientb').value=hangthang*dgthuebao;
+    document.getElementById('dongianh').value=dgnoihat;
+    document.getElementById('tiennh').value=cnoihat*dgnoihat;
+    document.getElementById('dongialt').value=dgnoihatlt;
+    document.getElementById('tienlt').value=cnoihatlt*dgnoihatlt;
+    document.getElementById('dongianmlt').value=dgngoaihatlt;
+    document.getElementById('tiennmlt').value=cngoaihatlt*dgngoaihatlt;
+    document.getElementById('dongianmddnh').value=dgddnoihat;
+    document.getElementById('tienddnh').value=cddnoihat*dgddnoihat;
+    document.getElementById('dongiaddnm').value=dgddngoaihat;
+    document.getElementById('tienddnm').value=cddngoaihat*dgddngoaihat;
+    document.getElementById('tongtien').value=(hangthang*dgthuebao+cnoihat*dgnoihat+cnoihatlt*dgnoihatlt+cngoaihatlt*dgngoaihatlt+cddnoihat*dgddnoihat+cddngoaihat*dgddngoaihat).toFixed(1);
+    document.getElementById('tongtienvat').value=((hangthang*dgthuebao+cnoihat*dgnoihat+cnoihatlt*dgnoihatlt+cngoaihatlt*dgngoaihatlt+cddnoihat*dgddnoihat+cddngoaihat*dgddngoaihat)*(1+0.1)).toFixed(1);
+}
+function myreset(){
+    document.getElementById('dongiatb').value=null;
+    document.getElementById('tientb').value=null;
+    document.getElementById('dongianh').value=null;
+    document.getElementById('tiennh').value=null;
+    document.getElementById('dongialt').value=null;
+    document.getElementById('tienlt').value=null;
+    document.getElementById('dongianmlt').value=null;
+    document.getElementById('tiennmlt').value=null;
+    document.getElementById('dongianmddnh').value=null;
+    document.getElementById('tienddnh').value=null;
+    document.getElementById('dongiaddnm').value=null;
+    document.getElementById('tienddnm').value=null;
+    document.getElementById('tongtien').value=null;
+    document.getElementById('tongtienvat').value=null;
+    document.getElementById('thuebao').value=null;
+    document.getElementById('noihat').value=null;
+    document.getElementById('noihatlt').value=null;
+    document.getElementById('nmlt').value=null;
+    document.getElementById('didongnh').value=null;
+    document.getElementById('didongnm').value=null;
+}

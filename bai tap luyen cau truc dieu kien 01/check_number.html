@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check_number</title>
+</head>
+<body>
+    <h2><Span> Enter an integer</Span>
+        <input type="number"  id="mynumber" style="text-align: right;">
+    </h2>
+    <p><span>Result: </span>
+        <span id="result"></span>
+    </p>
+    <p><button onclick="mycheck()">Check</button></p>
+    <p><button onclick="myreset()">Reset</button></p>
+    <script>
+        function mycheck() {
+            let mynumber=Number(document.getElementById('mynumber').value);
+            if (mynumber > 0) {
+                document.getElementById('result').innerText=(mynumber + ' Greater than zero ');
+            }
+                else {
+                    document.getElementById('result').innerText=(mynumber + ' Less than zero ');
+                }
+        }
+        function myreset(){
+            document.getElementById('result').innerHTML=null;
+        }
+    </script>
+</body>
+</html>

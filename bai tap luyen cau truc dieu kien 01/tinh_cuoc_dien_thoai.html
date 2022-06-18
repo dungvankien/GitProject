@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Bill</title>
+    <link rel="stylesheet" href="tinh_cuoc_dien_thoai.css">
+</head>
+<body>
+    <table border="1">
+        <tbody>
+            <tr>
+                <th colspan="4">CƯỚC ĐIỆN THOẠI</th>
+            </tr>
+                <th>Loại cước</th>
+                <th>Thời gian</th>
+                <th>Đơn giá</th>
+                <th>Số tiền cước</th>
+            <tr>
+                <td>Cước thuê bao hàng tháng</td>
+                <td><input class="dinhdang" type="number" id="thuebao"></td>
+                <td><input class="dinhdang"type="number" id="dongiatb" readonly></td>
+                <td><input class="dinhdang"type="number" id="tientb" readonly></td>
+            </tr>
+            <tr>
+                <td>Cước nội hạt/phút</td>
+                <td><input class="dinhdang"type="number" id="noihat"></td>
+                <td><input class="dinhdang"type="number" id="dongianh" readonly></td>
+                <td><input class="dinhdang"type="number" id="tiennh" readonly></td>
+            </tr>
+            <tr>
+                <td>Cước nội hạt liên tỉnh/phút</td>
+                <td><input class="dinhdang"type="number" id="noihatlt"></td>
+                <td><input class="dinhdang"type="number" id="dongialt" readonly></td>
+                <td><input class="dinhdang"type="number" id="tienlt" readonly></td>
+            </tr>
+            <tr>
+                <td>Cước ngoại mạng liên tỉnh/phút</td>
+                <td><input class="dinhdang"type="number" id="nmlt"></td>
+                <td><input class="dinhdang"type="number" id="dongianmlt" readonly></td>
+                <td><input class="dinhdang"type="number" id="tiennmlt" readonly></td>
+            </tr>
+            <tr>
+                <td>Cước di động nội hạt/phút</td>
+                <td><input class="dinhdang"type="number" id="didongnh"></td>
+                <td><input class="dinhdang"type="number" id="dongianmddnh" readonly></td>
+                <td><input class="dinhdang"type="number" id="tienddnh" readonly></td>
+            </tr>
+            <tr>
+                <td>Cước di động ngoại mạng/phút </td>
+                <td><input class="dinhdang"type="number" id="didongnm"></td>
+                <td><input class="dinhdang"type="number" id="dongiaddnm" readonly></td>
+                <td><input class="dinhdang"type="number" id="tienddnm" readonly></td>
+            </tr>
+            <tr>
+                <th colspan="3">Tổng tiền chưa thuế</th>
+                <td><input class="dinhdang"type="number" id="tongtien" readonly></td>
+            </tr>
+            <tr>
+                <th colspan="3">Tổng tiền 10% VAT</th>
+                <td><input class="dinhdang"type="number" id="tongtienvat" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><button onclick="mycheck()">Submit</button></p>
+    <p><button onclick="myreset()">Reset</button></p>
+    <script src="tinh_cuoc_dien_thoai.js"></script>
+</body>
+</html>

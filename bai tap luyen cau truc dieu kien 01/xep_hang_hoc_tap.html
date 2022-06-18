@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>academic ranking</title>
+</head>
+<body>
+    <h2>Xếp hạng học sinh</h2>
+    <p><span>Điểm bài kiểm tra</span>
+        <input type="number" id="kiemtra">
+    </p>
+    <p><span>Điểm thi giữa kỳ</span> <input type="number" id="giuaky"></p>
+    <p><span>Điểm cuối kỳ</span><input type="number"  id="cuoiky"></p>
+    <p><span>Kết quả xếp loại: </span>
+        <span id="result"></span>
+    </p>
+    <p><button onclick="mycheck()">Kiểm tra</button></p>
+    <script>
+        function mycheck() {
+            let kiemtra=Number(document.getElementById('kiemtra').value);
+            let giuaky=Number(document.getElementById('giuaky').value);
+            let cuoiky=Number(document.getElementById('cuoiky').value);
+            let trungBinh=((kiemtra+giuaky*2+cuoiky*3)/6).toFixed(2);
+            if (trungBinh>=8.5){
+                document.getElementById('result').innerHTML=(trungBinh+" Xuất xắc");
+            }
+            else if(trungBinh>=8){
+                document.getElementById('result').innerHTML=(trungBinh+" Giỏi");
+            }
+                else if (trungBinh>=6.5) {
+                    document.getElementById('result').innerHTML=(trungBinh+" Khá");
+                }
+                    else if(trungBinh>=5) {
+                        document.getElementById('result').innerHTML=(trungBinh+" Trung binh");
+                    }
+                        else {
+                            document.getElementById('result').innerHTML=(trungBinh+" yếu");
+                        }
+            }
+    </script>
+</body>
+</html>

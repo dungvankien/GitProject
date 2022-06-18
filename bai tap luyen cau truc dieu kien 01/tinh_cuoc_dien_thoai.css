@@ -1,0 +1,19 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: aquamarine;
+    padding: 5px;
+    margin:auto;
+}
+.dinhdang{
+text-align: right;
+}
+input{
+    width: auto;
+    padding: 0px;
+   border: none;
+   background-color: aquamarine;
+}
