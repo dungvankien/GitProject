@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <button onclick="myclick()">Bắt đầu</button>
+    <script>
+        function myclick(){
+            let count=0;
+            let mynumber=Number(prompt('Nhập số muốn dự đoán trong khoản nào'));
+            var myrandom=Math.floor(Math.random()*mynumber);
+            var duDoan=Number(prompt('Nhập giá trị muốn đoán'));
+            while (count<3) {
+                if (duDoan==myrandom){
+                    alert('Chúc mừng bạn đã đoán đúng');
+                    count=4;
+                    break;
+                }
+                    else if(duDoan>myrandom){
+                        duDoan=Number(prompt('Giá trị nhập lớn hơn'));
+                     }
+                            else{
+                                 duDoan=Number(prompt('Giá trị nhập nhỏ hơn'));
+                            }
+                count +=1;
+                if(count==3){
+                    alert('Bạn đẫ hết lượt dự đoán');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
