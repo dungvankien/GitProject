@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+
+    <script>
+        for(let i=1; i<=15;i++){
+            // mybutton='<button onclick="myclick()">button '+i+' </button>'
+            document.write(`<button onclick="myclick(${i})">button ${i}</button>`)
+        }
+        function myclick(number) {
+            alert(`Button ${number}`)
+        }
+    </script>
+
+    <!-- Chess -->
+    <!-- <style>
+        .black{
+            background-color:brown;
+        }
+        .white{
+            background-color:blue;
+        }
+        td,tr,table{
+            padding: 20px;
+            border-collapse: collapse;
+            border: none;
+            margin: auto;
+        }
+        td:hover{
+            cursor: pointer;
+            background-color: blueviolet;
+        }
+    </style>
+    <script>
+        const size=8;
+        let chess="<table border='1'>";
+                chess+="<tbody>";
+                    for(let row=1;row<=size;row++){
+                        chess+="<tr>";
+                        for(let cell=1;cell<=size;cell++){
+                            if(row%2==0){
+                                if (cell%2==0){
+                                chess+=`<td class='black' onclick='alert("${row}-${cell}")'></td>`;
+                                }
+                                else{
+                                    chess+=`<td class='white' onclick='alert("${row}-${cell}")'></td>`;
+                                }
+                            }
+                            else{
+                                if (cell%2==0){
+                                chess+=`<td class='white' onclick='alert("${row}-${cell}")'></td>`;
+                                }
+                                else{
+                                    chess+=`<td class='black' onclick='alert("${row}-${cell}")'></td>`;
+                                }
+                            }
+                        }
+                        chess+="</tr>";
+                    }
+                chess +="</tbody>";
+            chess +="</table>";
+        document.write(chess)
+    </script> -->
+</body>
+</html>

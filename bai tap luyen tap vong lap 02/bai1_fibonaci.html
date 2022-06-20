@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonaci</title>
+</head>
+<body>
+    <script>
+    let mynumber=Number(prompt('Bạn muốn chạy một chuỗi fibonaci bao nhiêu phần tử'));
+    let firstnumber=0;
+    let secondnumber=1;
+    let thirdnumber;
+    let count=2;
+    document.writeln(0);
+    document.writeln(1);
+    while(count<mynumber){
+        thirdnumber=firstnumber+secondnumber;
+        firstnumber=secondnumber;
+        secondnumber=thirdnumber;
+        count++;
+        document.writeln(thirdnumber);
+    }
+    </script>
+</body>
+</html>
