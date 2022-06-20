@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lai kep ngan hang</title>
+</head>
+<body>
+    <script>
+        const myMoney=100000000;
+        const interestRate=0.8;
+        const months=2;
+        let interestMoney;
+        let totalMoney=myMoney;
+        for (let i=1;i<=months;i++){
+            interestMoney=totalMoney*interestRate/100;
+            totalMoney=totalMoney+interestMoney;
+        }
+        document.write('Số tiền gốc và lãi trong '+months + ' cần trả: '+totalMoney.toFixed(2));
+        document.write('<br>');
+        document.write('Số tiền lãi phải phát sinh trong '+months+ ': '+(totalMoney-myMoney).toFixed(2));
+    </script>
+</body>
+</html>

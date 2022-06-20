@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+    <!-- <script>
+        let mystar=""
+        let star="" 
+        for(let i=1;i<=5;i++){
+            star=star+"*";
+            mystar+=star +'<br>';
+        }
+        document.write(mystar);
+    </script> -->
+    <!-- <script>
+        let star="";
+        let mystar;
+        let j=5;
+        let gan;
+        for (let i=1;i<=5;i++){
+            gan=j
+            for(;j>=1;j--){
+                star=star+"*";
+            }
+            mystar=`${star}` +'<br>';
+            j=gan-1;
+            star="";
+            document.write(mystar)
+        }
+    </script> -->
+    <!-- <script>
+        const size=7;
+        let star=""
+        for (let i=size;i>=1;i--){
+            for(let j=1;j<=i;j++){
+                document.write('&nbsp ');
+            }
+            star= star+"*";
+            document.write(star);
+            document.write('<br>');
+        }
+    </script> -->
+    <script>
+        const size=5;
+        let star=""
+        let blank=""
+        for (let i=size;i>=1;i--){
+            for(let j=1;j<=i;j++){
+                star= star+"*";
+            }
+            blank+='&nbsp '
+            document.write(blank);
+            document.write(star);
+            document.write('<br>');
+            star="";
+        }
+    </script>
+</body>
+</html>
