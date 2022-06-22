@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <!-- <script> 
+    let number=[4,5,6,7,2,8,9];
+    // for(let i=0;i<5;i++){
+    //     document.write(number[i]+'<br>');
+    // }
+    // let i=0;
+    // while(i < 5){
+    //     document.write(number[i]+'<br>');
+    //     i += 1;
+    // }
+    let i=0;
+    do{
+        document.write(number[i]+'<br>');
+        i++;  
+    } while(i < number.length);
+    </script> -->
+    <!-- <script>
+        let number = [];
+        let mynumber =Number(prompt('Enter a number'));
+        for( let i=0;i<mynumber;i++){
+            number[i] =prompt(`array${i}`);
+        }
+        document.write(number);
+    </script> -->
+    <!-- <script>
+        let size=Number(prompt('Enter a Size'));
+        let myArray=[];
+        let min=Number(prompt('Number min'));
+        let max=Number(prompt('Number max'));
+        for (let i=0;i<size;i++){
+            myArray[i]=Math.floor(Math.random() * (max-min +1)) + min;
+        }
+        document.write(myArray);
+    </script> -->
+    <script>
+        let size=Number(prompt('Enter a Size'));
+        let myArray=[];
+        let min=Number(prompt('Number min'));
+        let max=Number(prompt('Number max'));
+        let sum=0;
+        let count=0;
+        var flag=true;
+        for (let i=0;i<size;i++){
+            myArray[i]=Math.floor(Math.random() * (max-min +1)) + min;
+        }
+        document.write('Các phần tử trong mảng ' +myArray+'<br>');
+        document.write('Các số chẵn:'+'<br>');
+        for (let j=0;j<myArray.length;j++){
+            sum +=myArray[j];
+            if(myArray[j]%2==0){
+                document.writeln(myArray[j]+'<br>');
+                count +=1;
+            }
+            else if (myArray[j]==15){
+                flag=true;
+            }
+                else{
+                    flag=false;
+                }
+        }
+        document.write('Đếm Các số chẵn: '+ count+'<br>');
+        document.write('Tổng các phần tử trong mảng ' +sum +'<br>');
+        if (flag){
+            document.write(`Trong mảng có phần tủ 15`+'<br>');
+        }
+        else{
+            document.write(`Trong mảng không có phần tử 15 `+'<br>');
+        }
+
+    </script>
+</body>
+</html>
