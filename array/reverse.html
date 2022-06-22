@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+</head>
+<body>
+    <script>
+        let x=[-2,3,4,8,-4,9,0];
+        let b;
+        let first=0;
+        let last = x.length-1;
+        document.write('array begin ' + x +'<br>');
+        while(first<last){
+            b=x[first];
+            x[first]=x[last];
+            x[last]=b;
+            first++;
+            last--;
+        }
+        document.write('array reverse ' + x);
+    </script>
+</body>
+</html>
