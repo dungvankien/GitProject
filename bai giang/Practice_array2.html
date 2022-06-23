@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_Array</title>
+</head>
+
+<body>
+    <!-- // Viết chương trình tạo ra 1 mảng 2 chiều có số dòng là row, số ô trên mỗi dòng là cell
+// mảng 2 chiều này được tạo ra bằng cách sinh các số ngẫu nhiên trong khoảng [min, max]
+// các giá trị row, cell, min, max được người dùng nhập vào từ bàn phím
+// yêu cầu:
+// 1. Hiển thị mảng 2 chiều trên
+// 2. Đến xem trong mảng 2 chiều trên có bao nhiêu số chẵn
+// 3. Đếm xem trong mảng 2 chiều trên có bao nhiêu số nguyên tố
+// 4. Tính tổng các giá trị trên đường biên. -->
+    <script>
+        let row = Number(prompt('Nhâp số dòng'));
+        let cell = Number(prompt('Nhập số ô trên mỗi dòng'));
+        let min = Number(prompt('Nhập khoảng giá trị Min'));
+        let max = Number(prompt('Nhập khoảng giá trị Max'));
+        let myArray = [];
+        let result;
+        let countEven = 0;
+        let countPrime = 0;
+        let flag = true
+        let sumBorder = 0;
+        for (let i = 0; i < row; i++) {
+            myArray[i] = [];
+            for (let j = 0; j < cell; j++) {
+                myArray[i][j] = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+        }
+        result = "<table border='1'>";
+        result += "<tbody>";
+        for (let i = 0; i < row; i++) {
+            result += "<tr>";
+            for (let j = 0; j < cell; j++) {
+                result += `<td>${myArray[i][j]}</td>`
+            }
+            result += "</tr>";
+        }
+        result += "</tbody>";
+        result += "</table>";
+        document.write(result + "<br>");
+        for (let i = 0; i < row; i++) {
+            for (let j = 0; j < cell; j++) {
+                if (myArray[i][j] % 2 == 0) {
+                    countEven++;
+                }
+            }
+        }
+        document.write('Các số chẳn có trong mảng: ' + countEven + '<br>');
+        for (let i = 0; i < row; i++) {
+            for (let j = 0; j < cell; j++) {
+                if (myArray[i][j] > 1) {
+                    flag = true;
+                    for (let k = 2; k < myArray[i][j]; k++) {
+                        if (myArray[i][j] % k == 0) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        countPrime++;
+                    }
+                }
+            }
+        }
+        document.write('Các số nguyên tố có trong mảng ' + countPrime + "<br>");
+        for (let i = 0; i < row; i++) {
+            for (let j = 0; j < cell; j++) {
+                if (i == 0 || i == (row - 1)) {
+                    sumBorder += myArray[i][j];
+                }
+                else if (j == 0 || j == (cell - 1)) {
+                    sumBorder += myArray[i][j];
+                }
+            }
+        }
+        document.write('Tổng các giá trị đường biên ' + sumBorder);
+    </script>
+</body>
+
+</html>
