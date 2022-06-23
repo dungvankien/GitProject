@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function_array</title>
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <!-- <Script>
+        let myColor=["Red","Green","White","Black"];
+        document.write(myColor.join());
+    </Script> -->
+
+    <!-- Bài 2 -->
+    <!-- <script>
+        let myNumber = Number(prompt('Nhập một dãy số liên tiếp'));
+        let str = myNumber.toString();
+        let result = [str[0]];
+        for (let i = 1; i < str.length; i++) {
+            if (str[i - 1] % 2 == 0 && str[i] % 2 == 0) {
+                result.push('-', str[i]);
+            } else {
+                result.push(str[i]);
+            }
+        }
+        document.write(result.join(''));
+    </script> -->
+
+    <!-- Bài 3 -->
+    <script>
+        let str = 'The Quick Brown Fox';
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result = [];
+        for(let i=0; i<str.length; i++)
+        {
+            if(UPPER.indexOf(str[i]) !== -1)
+            {
+            result.push(str[i].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[i]) !== -1)
+            {
+            result.push(str[i].toUpperCase());
+            }
+            else 
+            {
+            result.push(str[i]);
+            }
+        }
+        document.write(result.join(""));
+    </script>
+</body>
+
+</html>
