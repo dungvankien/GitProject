@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faking Textare</title>
+</head>
+<body onload="fake()">
+    <h1>Type anthing slowly</h1>
+    <p><textarea  id="txt" cols="30" rows="10" ></textarea></p>
+    <script>
+        const mytext='Tiếng gọi trong bụi mận gai';
+        let myArray=[];
+        for(i=0;i<mytext.length;i++){
+            myArray.push(mytext[i])
+        }
+        let str="";
+        function fake(){
+        let text = document.getElementById("txt").value;
+        for(let i = 0; i < text.length; i++)
+        {
+            str = str + myArray[i];
+            if (i === myArray.length)
+            {
+                str = "";
+            }
+        }
+        document.getElementById("txt").value = str;
+        str = "";
+        setTimeout("fake()", 1);
+    }
+    </script>
+</body>
+</html>
