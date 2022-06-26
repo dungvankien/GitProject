@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="productManagement.css">
+</head>
+<body>
+    <h2>Add New Product</h2>
+    <p><input type="text" id="newProduct" placeholder="New Product">
+        <button id="save" onclick="addProduct()">Add</button>
+        <button id="update" onclick="myUpdate()" style="display:none;">Update</button>
+    </p>
+    <p id="idexHidden" type="hidden"></p>
+    <h2>Display All Product</h2>
+    <p id="mytable"></p>
+    <script src="productManagement.js"></script>
+</body>
+</html>
