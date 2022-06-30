@@ -1,4 +1,4 @@
-let isTemperature = function (cecius) {
+let Temperature = function (cecius) {
     this.cecius = cecius;
     this.convertFahrenheit = function () {
         return ((9 * cecius / 5) + 32);
@@ -7,6 +7,6 @@ let isTemperature = function (cecius) {
         return cecius+273.15;
     }
 }
-let temperature=new isTemperature(25);
+let temperature=new Temperature(25);
 console.log(temperature.convertFahrenheit());
 console.log(temperature.convertKelvin());
