@@ -5,7 +5,7 @@ function findEquation2(a, b, c) {
     if (a == 0 && b == 0) {
         return "phuong trình không xác định";
     }
-    else if (a == 0 && b != 0) {
+    if (a == 0 && b != 0) {
         return `Phuong trinh co 1 nghiem x= ${(-c) / b} `;
     }
     let denta = b * b - 4 * a * c;
@@ -19,4 +19,7 @@ function findEquation2(a, b, c) {
         return "Phương trình có 2 nghiệm x1= " + (-b + Math.sqrt(denta)) / (2 * a) + " Nhiệm x2= " + (-b - Math.sqrt(denta)) / (2 * a);
     }
 }
-findEquation2(8, 12, -20);
+let a=Number(prompt("input a"));
+let b=Number(prompt("input b"));
+let c=Number(prompt("input c"));
+findEquation2(a, b, c);
